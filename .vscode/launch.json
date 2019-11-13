@@ -2,16 +2,16 @@
     "configurations": [
         {
             "type": "java",
-            "name": "CodeLens (Launch) - TelaDeCadastro",
+            "name": "CodeLens (Launch) - TelaDeLogin",
             "request": "launch",
-            "mainClass": "Telas.TelaDeCadastro",
+            "mainClass": "Telas.TelaDeLogin",
             "projectName": "PorojetoCinema"
         },
         {
             "type": "java",
-            "name": "CodeLens (Launch) - TelaDeLogin",
+            "name": "CodeLens (Launch) - TelaPadrao",
             "request": "launch",
-            "mainClass": "Telas.TelaDeLogin",
+            "mainClass": "Telas.TelaPadrao",
             "projectName": "PorojetoCinema"
         }
     ]

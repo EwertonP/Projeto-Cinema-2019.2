@@ -27,6 +27,8 @@ public class TelaHome extends TelaPadrao {
         adicionarImagem("Imagens\\bg tela home.png");
         cadastros();
         atualizarTabela();
+        enviarEmail();
+        listarGrupo();
         //adicionarMenu();
         setVisible(true);
         repaint();
@@ -88,29 +90,29 @@ public class TelaHome extends TelaPadrao {
 
         JLabel cadastroSala = new JLabel();
         cadastroSala.setText("Cadastrar Sala");
-        cadastroSala.setBounds(55, 240, 120, 40);
-        cadastroSala.setFont(new Font("Quicksand", Font.BOLD, 16));
+        cadastroSala.setBounds(60, 230, 120, 40);
+        cadastroSala.setFont(new Font("Quicksand", Font.BOLD, 14));
         cadastroSala.setForeground(Color.WHITE);
         add(cadastroSala);
 
         JLabel cadastroSessao = new JLabel();
         cadastroSessao.setText("Cadastrar Sessão");
-        cadastroSessao.setBounds(55, 270, 150, 40);
-        cadastroSessao.setFont(new Font("Quicksand", Font.BOLD, 16));
+        cadastroSessao.setBounds(60, 260, 150, 40);
+        cadastroSessao.setFont(new Font("Quicksand", Font.BOLD, 14));
         cadastroSessao.setForeground(Color.WHITE);
         add(cadastroSessao);
 
         JLabel cadastroFilme = new JLabel();
         cadastroFilme.setText("Cadastrar Filme");
-        cadastroFilme.setBounds(55, 300, 150, 40);
-        cadastroFilme.setFont(new Font("Quicksand", Font.BOLD, 16));
+        cadastroFilme.setBounds(60, 290, 150, 40);
+        cadastroFilme.setFont(new Font("Quicksand", Font.BOLD, 14));
         cadastroFilme.setForeground(Color.WHITE);
         add(cadastroFilme);
 
         JLabel cadastroUser = new JLabel();
         cadastroUser.setText("Cadastrar Usuário");
-        cadastroUser.setBounds(55, 330, 150, 40);
-        cadastroUser.setFont(new Font("Quicksand", Font.BOLD, 16));
+        cadastroUser.setBounds(60, 320, 150, 40);
+        cadastroUser.setFont(new Font("Quicksand", Font.BOLD, 14));
         cadastroUser.setForeground(Color.WHITE);
         add(cadastroUser);
     }
@@ -119,7 +121,7 @@ public class TelaHome extends TelaPadrao {
         JLabel atualizar = new JLabel(Imagens.ICON_ATUALIZAR);
         atualizar.setText("Atualizar Tabela");
         atualizar.setFont(new Font("Quicksand", Font.BOLD, 18));
-        atualizar.setBounds(25, 385, 180, 20);
+        atualizar.setBounds(25, 365, 180, 20);
         atualizar.setForeground(Color.WHITE);
         atualizar.addMouseListener(new MouseInputListener() {
 
@@ -165,6 +167,46 @@ public class TelaHome extends TelaPadrao {
             }
         });
         add(atualizar);
+    }
+
+    public void enviarEmail() {
+        JLabel enviarEmail = new JLabel(Imagens.ICON_EMAIL);
+        enviarEmail.setText("Email Marketing");
+        enviarEmail.setFont(new Font("Quicksand", Font.BOLD, 18));
+        enviarEmail.setBounds(25, 405, 180, 20);
+        enviarEmail.setForeground(Color.WHITE);
+        add(enviarEmail);
+    }
+
+    public void listarGrupo() {
+        JLabel lista = new JLabel(Imagens.ICON_LISTAR);
+        lista.setText("Listar");
+        lista.setFont(new Font("Quicksand", Font.BOLD, 18));
+        lista.setBounds(0, 440, 140, 30);
+        lista.setForeground(Color.WHITE);
+        add(lista);
+
+        JLabel listarFilmes = new JLabel("Listar Filmes");
+        listarFilmes.setBounds(60, 465, 120, 40);
+        listarFilmes.setFont(new Font("Quicksand", Font.BOLD, 14));
+        listarFilmes.setForeground(Color.WHITE);
+        add(listarFilmes);
+
+        JLabel listarSessao = new JLabel("Listar Sessões");
+        listarSessao.setBounds(60, 495, 140, 40);
+        listarSessao.setFont(new Font("Quicksand", Font.BOLD, 14));
+        listarSessao.setForeground(Color.WHITE);
+        add(listarSessao);
+
+        JLabel listarSalas = new JLabel("Listar Salas");
+        listarSalas.setBounds(60, 525, 140, 40);
+        listarSalas.setFont(new Font("Quicksand", Font.BOLD, 14));
+        listarSalas.setForeground(Color.WHITE);
+        add(listarSalas);
+    }
+
+    public void gerarRelatorio() {
+        JLabel relatorio = new JLabel();
     }
 
     public static void main(String[] args) {

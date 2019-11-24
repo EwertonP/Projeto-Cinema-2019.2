@@ -22,6 +22,8 @@ public class Imagens{
 
     public static final ImageIcon ICON_ATUALIZAR = new ImageIcon("Imagens\\atualizar tabela.png");
 
+    public static final ImageIcon ICON_EMAIL = new ImageIcon("Imagens\\email.png");
 
+    public static final ImageIcon ICON_LISTAR = new ImageIcon("Imagens\\listar detalhes.png");
 
 }

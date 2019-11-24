@@ -12,7 +12,7 @@ import com.thoughtworks.xstream.io.xml.DomDriver;
 public class Persistencia{
  
     private XStream xs = new XStream(new DomDriver());
-    private File arquivo = new File("central.xml");
+    private File arquivo = new File("Banco de Dados.xml");
     private static Persistencia persistencia = null;
 
     public void salvarCentral(BancoDeDados ci) {

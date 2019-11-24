@@ -2,19 +2,11 @@ package Logica;
 
 public class Usuario {
 
-    private String nome;
     private String cpf;
     private String login;
     private String senha;
     private String email;
-
-    public String getNome() {
-        return this.nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
+    
 
     public String getCpf() {
         return this.cpf;
@@ -48,8 +40,7 @@ public class Usuario {
         this.email = email;
     }
 
-    public Usuario(String nome, String cpf, String login, String senha, String email) {
-        this.nome = nome;
+    public Usuario(String cpf, String login, String senha, String email) {
         this.cpf = cpf;
         this.login = login;
         this.senha = senha;

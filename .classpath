@@ -5,5 +5,4 @@
 	<classpathentry excluding="src/" kind="src" path=""/>
 	<classpathentry kind="output" path="bin"/>
 	<classpathentry exported="true" kind ="lib" path="lib/xstream-1.4.11.1.jar" />
-	<classpathentry exported="true" kind ="lib" path="lib/facilitasdk.jar" />
 </classpath>

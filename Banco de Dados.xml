@@ -1,0 +1,13 @@
+<Logica.BancoDeDados>
+  <AdministradoresCadastrados>
+    <Logica.Usuario>
+      <cpf>107.375.864-86</cpf>
+      <login>ewerton</login>
+      <senha>estasenha13</senha>
+      <email>ewertonphillipe18@gmail.com</email>
+    </Logica.Usuario>
+  </AdministradoresCadastrados>
+  <SalasCadastradas/>
+  <SessoesCadastradas/>
+  <FilmesCadastrados/>
+</Logica.BancoDeDados>

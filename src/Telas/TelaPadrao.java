@@ -16,6 +16,10 @@ import javax.swing.JFrame;
 public class TelaPadrao extends JFrame {
 
 	class ImagePanel extends JComponent {
+		/**
+		 *
+		 */
+		private static final long serialVersionUID = 1L;
 		private Image image;
 
 		public ImagePanel(Image image) {
@@ -46,7 +50,7 @@ public class TelaPadrao extends JFrame {
 	public TelaPadrao() {
 		setSize(500, 500);
 		setLocationRelativeTo(null);
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setLayout(null);
 	}
 }

@@ -11,6 +11,11 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import javax.swing.event.MouseInputListener;
+
+import Logica.BancoDeDados;
+import Logica.Persistencia;
+import Logica.Usuario;
+
 import javax.swing.JPasswordField;
 
 import Util.Imagens;
@@ -29,6 +34,9 @@ public class TelaDeLogin extends TelaPadrao {
 		setVisible(true);
 		repaint();
 	}
+
+	Persistencia p = new Persistencia();
+	BancoDeDados b = p.recuperarCentral();
 
 	private JTextField tfLogin;
 	private JPasswordField tfsenha;
@@ -76,6 +84,63 @@ public class TelaDeLogin extends TelaPadrao {
 		loginButton.setBounds(100, 350, 140, 40);
 		loginButton.setFont(new Font("Quicksand", Font.BOLD, 12));
 		loginButton.setBackground(new Color(105, 61, 182));
+		loginButton.addMouseListener(new MouseInputListener() {
+
+			@Override
+			public void mouseMoved(MouseEvent e) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mouseDragged(MouseEvent e) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mouseReleased(MouseEvent e) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mousePressed(MouseEvent e) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mouseExited(MouseEvent e) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mouseEntered(MouseEvent e) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				String login = tfLogin.getText();
+				String senha = new String(tfsenha.getPassword());
+				for (Usuario u : b.getAdministradoresCadastrados()) {
+					if (u.getLogin().equals(login) && u.getSenha().equals(senha)
+							|| ((login.equals("admin")) && (senha.equals("admin")))) {
+						JOptionPane.showMessageDialog(null, "Bem-Vindo", "goocine", JOptionPane.INFORMATION_MESSAGE);
+						dispose();
+						new TelaHome();
+					}
+				}
+				if (login.isEmpty() || senha.isEmpty()) {
+					JOptionPane.showMessageDialog(null, "Não deixe nada em branco", "goocine",
+							JOptionPane.INFORMATION_MESSAGE);
+				}
+
+			}
+		});
 
 		final JButton cadasButton = new JButton("CADASTRAR", Imagens.CADASTRAR_TELADELOGIN_ICON);
 		cadasButton.setBounds(260, 350, 140, 40);

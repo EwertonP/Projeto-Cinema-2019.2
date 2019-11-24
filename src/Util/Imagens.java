@@ -18,6 +18,10 @@ public class Imagens{
 
     public static final ImageIcon CANCELAR_TELADECADASTRO_ICON = new ImageIcon("Imagens\\cancelar_TelaDeCadastro.png");
 
+    public static final ImageIcon CADASTRAR_TELA_HOME = new ImageIcon("Imagens\\cadastrar tela home.png");
+
+    public static final ImageIcon ICON_ATUALIZAR = new ImageIcon("Imagens\\atualizar tabela.png");
+
 
 
 }

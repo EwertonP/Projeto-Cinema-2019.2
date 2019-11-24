@@ -2,6 +2,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - TelaDeCadastroDeSessao",
+            "request": "launch",
+            "mainClass": "Telas.TelaDeCadastroDeSessao",
+            "projectName": "PorojetoCinema"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - CadastrarSessao",
+            "request": "launch",
+            "mainClass": "Telas.CadastrarSessao",
+            "projectName": "PorojetoCinema"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TelaHome",
+            "request": "launch",
+            "mainClass": "Telas.TelaHome",
+            "projectName": "PorojetoCinema"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - RecuperarSenha",
+            "request": "launch",
+            "mainClass": "Telas.RecuperarSenha",
+            "projectName": "PorojetoCinema"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - TelaDeCadastro",
             "request": "launch",
             "mainClass": "Telas.TelaDeCadastro",

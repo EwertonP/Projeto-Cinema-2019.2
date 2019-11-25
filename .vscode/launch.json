@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - TelaDeSala",
+            "request": "launch",
+            "mainClass": "Telas.TelaDeSala",
+            "projectName": "PorojetoCinema"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TelaDeSessao",
+            "request": "launch",
+            "mainClass": "Telas.TelaDeSessao",
+            "projectName": "PorojetoCinema"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - TelaDeCadastroDeSessao",
             "request": "launch",
             "mainClass": "Telas.TelaDeCadastroDeSessao",

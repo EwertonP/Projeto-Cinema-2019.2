@@ -26,7 +26,7 @@ public class TelaDeCadastro extends TelaPadrao {
     private static final long serialVersionUID = 1L;
 
     public TelaDeCadastro() {
-        setTitle("Tela de Cadastro");
+        setTitle("Cadastro de Usuário");
         setResizable(false);
         adicionarImagem("Imagens\\bg tela de cadastro.png");
         botoes();

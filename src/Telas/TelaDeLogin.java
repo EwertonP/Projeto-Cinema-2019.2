@@ -25,7 +25,7 @@ public class TelaDeLogin extends TelaPadrao {
 	private static final long serialVersionUID = 1L;
 
 	public TelaDeLogin() {
-		setTitle("Tela de Login");
+		setTitle("Login");
 		setResizable(false);
 		adicionarImagem("Imagens\\bg tela de login .png");
 		adicionarJLabel();
@@ -132,6 +132,9 @@ public class TelaDeLogin extends TelaPadrao {
 						JOptionPane.showMessageDialog(null, "Bem-Vindo", "goocine", JOptionPane.INFORMATION_MESSAGE);
 						dispose();
 						new TelaHome();
+					}
+					else{
+						JOptionPane.showMessageDialog(null, "Usuário não encontrado", "goocine", JOptionPane.INFORMATION_MESSAGE);
 					}
 				}
 				if (login.isEmpty() || senha.isEmpty()) {

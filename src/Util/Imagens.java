@@ -26,4 +26,8 @@ public class Imagens{
 
     public static final ImageIcon ICON_LISTAR = new ImageIcon("Imagens\\listar detalhes.png");
 
+    public static final ImageIcon ICON_RELATORIO = new ImageIcon("Imagens\\relatorio.png");
+
+    public static final ImageIcon ICON_SAIR = new ImageIcon("Imagens\\sair.png");
+
 }

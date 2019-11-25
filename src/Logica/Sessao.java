@@ -9,7 +9,7 @@ public class Sessao extends Filme{
     private LocalTime horaDeInicio;
     private LocalTime horaDeEncerramento;
     private String filmeExibido;
-    private int ingressosVendidos;
+    private int ingressosDisponiveis;
 
     public boolean isExibicaoAndNow() {
         return this.exibicaoAndNow;
@@ -55,12 +55,12 @@ public class Sessao extends Filme{
         this.filmeExibido = filmeExibido;
     }
     
-    public int getIngressosVendidos() {
-        return this.ingressosVendidos;
+    public int getIngressosDisponiveis() {
+        return this.ingressosDisponiveis;
     }
-    
-    public void setIngressosVendidos(int ingressosVendidos) {
-        this.ingressosVendidos = ingressosVendidos;
+
+    public void setIngressosDisponiveis(int ingressosDisponiveis) {
+        this.ingressosDisponiveis = ingressosDisponiveis;
     }
 
 

@@ -1,6 +1,14 @@
 package Logica;
 
+import java.time.LocalTime;
+
 public class Sala extends Sessao {
+
+    public Sala(boolean exibicaoAndNow, String salaDeExibicao, LocalTime horaDeInicio, LocalTime horaDeEncerramento,
+            String filmeExibido, int ingressosDisponiveis) {
+        super(exibicaoAndNow, salaDeExibicao, horaDeInicio, horaDeEncerramento, filmeExibido, ingressosDisponiveis);
+        // TODO Auto-generated constructor stub
+    }
 
     private String nome;
     private int totalDeAssentos;
@@ -30,16 +38,6 @@ public class Sala extends Sessao {
         this.precoDoIngresso = precoDoIngresso;
     }
     
-
-    public Sala(String nome, int totalDeAssentos, float precoDoIngresso) {
-        this.nome = nome;
-        this.totalDeAssentos = totalDeAssentos;
-        this.precoDoIngresso = precoDoIngresso;
-    }
-
-
-    public Sala() {
-    }
 
 
 }

@@ -4,17 +4,26 @@ import java.time.LocalTime;
 
 public class Filme {
 
-    private LocalTime duracaoDoFilme;
+    private String duracaoDoFilme;
     private String nome;
     private String genero;
     private int classificacao;
+    private String sinopse;
 
-    public LocalTime getDuracaoDoFilme() {
+    public String getDuracaoDoFilme() {
         return this.duracaoDoFilme;
     }
 
-    public void setDuracaoDoFilme(LocalTime duracaoDoFilme) {
+    public void setDuracaoDoFilme(String duracaoDoFilme) {
         this.duracaoDoFilme = duracaoDoFilme;
+    }
+
+    public String getSinopse() {
+        return this.sinopse;
+    }
+
+    public void setSinopse(String sinopse) {
+        this.sinopse = sinopse;
     }
 
     public String getNome() {
@@ -40,6 +49,17 @@ public class Filme {
     public void setClassificacao(int classificacao) {
         this.classificacao = classificacao;
     }
+
+    
+    public Filme(String duracaoDoFilme, String nome, String genero, int classificacao, String sinopse) {
+        this.duracaoDoFilme = duracaoDoFilme;
+        this.nome = nome;
+        this.genero = genero;
+        this.classificacao = classificacao;
+        this.sinopse = sinopse;
+    }
+
+
 
         
 

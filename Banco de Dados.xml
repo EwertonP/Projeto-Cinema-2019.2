@@ -9,5 +9,13 @@
   </AdministradoresCadastrados>
   <SalasCadastradas/>
   <SessoesCadastradas/>
-  <FilmesCadastrados/>
+  <FilmesCadastrados>
+    <Logica.Filme>
+      <duracaoDoFilme>345</duracaoDoFilme>
+      <nome>Vingadores Ultimato</nome>
+      <genero>Ação e Aventura</genero>
+      <classificacao>16</classificacao>
+      <sinopse>Foda</sinopse>
+    </Logica.Filme>
+  </FilmesCadastrados>
 </Logica.BancoDeDados>

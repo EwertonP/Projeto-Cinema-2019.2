@@ -9,7 +9,7 @@ public class TelaDeSala extends TelaPadrao{
     public TelaDeSala() {
         setTitle("Cadastro de Salas");
 		setResizable(false);
-		adicionarImagem("Imagens\\bg tela de sessao.png");
+		adicionarImagem("Imagens\\bg tela de sala.png");
 		setVisible(true);
 		repaint();
     }

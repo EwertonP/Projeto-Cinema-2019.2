@@ -85,14 +85,14 @@ public class TelaHome extends TelaPadrao {
     public void cadastros() {
         JLabel cadastroGrupo = new JLabel(Imagens.CADASTRAR_TELA_HOME);
         cadastroGrupo.setText("Cadastros");
-        cadastroGrupo.setBounds(25, 200, 125, 40);
+        cadastroGrupo.setBounds(25, 150, 125, 40);
         cadastroGrupo.setFont(new Font("Quicksand", Font.BOLD, 18));
         cadastroGrupo.setForeground(Color.WHITE);
         add(cadastroGrupo);
 
         JLabel cadastroSala = new JLabel();
         cadastroSala.setText("Cadastrar Sala");
-        cadastroSala.setBounds(60, 230, 120, 30);
+        cadastroSala.setBounds(60, 180, 120, 30);
         cadastroSala.setFont(new Font("Quicksand", Font.BOLD, 14));
         cadastroSala.setForeground(Color.WHITE);
         cadastroSala.addMouseListener(new MouseInputListener(){
@@ -142,7 +142,7 @@ public class TelaHome extends TelaPadrao {
 
         JLabel cadastroSessao = new JLabel();
         cadastroSessao.setText("Cadastrar Sessão");
-        cadastroSessao.setBounds(60, 260, 150, 30);
+        cadastroSessao.setBounds(60, 210, 150, 30);
         cadastroSessao.setFont(new Font("Quicksand", Font.BOLD, 14));
         cadastroSessao.setForeground(Color.WHITE);
         cadastroSessao.addMouseListener(new MouseInputListener(){
@@ -192,7 +192,7 @@ public class TelaHome extends TelaPadrao {
 
         JLabel cadastroFilme = new JLabel();
         cadastroFilme.setText("Cadastrar Filme");
-        cadastroFilme.setBounds(60, 290, 150, 30);
+        cadastroFilme.setBounds(60, 240, 150, 30);
         cadastroFilme.setFont(new Font("Quicksand", Font.BOLD, 14));
         cadastroFilme.setForeground(Color.WHITE);
         cadastroFilme.addMouseListener(new MouseInputListener(){
@@ -242,7 +242,7 @@ public class TelaHome extends TelaPadrao {
 
         JLabel cadastroUser = new JLabel();
         cadastroUser.setText("Cadastrar Usuário");
-        cadastroUser.setBounds(60, 320, 150, 30);
+        cadastroUser.setBounds(60, 270, 150, 30);
         cadastroUser.setFont(new Font("Quicksand", Font.BOLD, 14));
         cadastroUser.setForeground(Color.WHITE);
         cadastroUser.addMouseListener(new MouseInputListener(){

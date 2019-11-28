@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - TelaDeFilme",
+            "request": "launch",
+            "mainClass": "Telas.TelaDeFilme",
+            "projectName": "PorojetoCinema"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - TelaDeSala",
             "request": "launch",
             "mainClass": "Telas.TelaDeSala",
